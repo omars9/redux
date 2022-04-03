@@ -1,0 +1,37 @@
+redux : state management library for javaScript
+===> applications react angular vue js
+
+props : parent ==> child 
+
+passing data from A to D, we would have to pass by B and C
+
+redux gave us a new way of handling state, we sotre in a global store in our app
+
+every component that needs to access data, dispatches an action
+
+redux flow
+----
+
+components dispatches ACTIONS, the REDUCER reads the ACTION and modifies the STORE
+depending on the ACTION TYPE
+
+ACTION:
+
+javaScript object
+
+const act = {
+    type: string ex: DELETE
+    payload(optional)
+}
+
+to eleminate typos (fautes de frappe) we create an actionTypes file and declare all
+the action types
+
+REDUCER:
+
+function that takes the action and the state as parameters and returns the new state
+
+SOTRE:
+function that takes the reducer as parameter
+
+
